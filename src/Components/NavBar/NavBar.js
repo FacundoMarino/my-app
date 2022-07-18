@@ -7,7 +7,7 @@ function NavBar(){
 <div>
       <ul className="nav justify-content-end bg-dark">
             <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="">Productos</a>
+                <a className="nav-link active" aria-current="page" href="#">Productos</a>
             </li>
             <li className="nav-item">
                 <a className="nav-link" href="#">Descuentos</a>

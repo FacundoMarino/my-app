@@ -1,10 +1,14 @@
-
+import ItemCount from "../ItemCount/ItemCount";
 
 function ItemListContainer(){
 
+const onAdd = (totalCart) => {
+    console.log(totalCart)
+}
+
     return(
         <div>
-            <p>Item List </p>
+            <ItemCount stock={5} initial={1} onAdd={onAdd} />
         </div>
     )
 

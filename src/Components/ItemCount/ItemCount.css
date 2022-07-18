@@ -1,0 +1,18 @@
+.container-itemcount{
+
+    display: flex; 
+    flex-direction: row;     
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    text-align: center;    
+}
+
+
+.itemcount-parrafo{
+    text-align: center;
+    align-items: center;
+    font-size: 1.4em;
+    padding: 1em;
+    margin: 0px;
+}
