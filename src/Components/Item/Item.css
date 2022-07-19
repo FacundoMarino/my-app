@@ -1,0 +1,9 @@
+.portada-img{
+    width: 20rem;
+}
+
+.container-portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
