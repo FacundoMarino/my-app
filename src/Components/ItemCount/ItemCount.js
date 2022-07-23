@@ -23,9 +23,10 @@ const restarCount = () => {
                 <p className='itemcount-parrafo'>{ count }</p>
                 
                 <button disabled={(count >= stock )} className='btn btn-success itm-button' onClick={agregarCount}>+</button>
-                    <div>
-                        <button onClick={() => onAdd(count)}>Agregar al Carrito</button>
-                    </div>
+                
+                <button className='btn btn-primary btn-agregar' onClick={() => onAdd(count)}>Agregar al Carrito</button>
+
+
             </div>
            )
 
