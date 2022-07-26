@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import { useState, useEffect } from "react"
 import ItemDetail from "../ItemDetail/ItemDetail"
 
@@ -15,13 +16,13 @@ const ItemDetailContainer = () => {
     const [data, setData] = useState([])
 
 useEffect (() => {
-    const promesa = new Promise(resolve => {
+    const prom = new Promise(resolve => {
         setTimeout(() => {
             resolve(producto)
         }, 3000);
     })
 
-    promesa.then(res => setData(res))
+    prom.then(res => setData(res))
 
     
 }, [])
