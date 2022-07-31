@@ -3,6 +3,7 @@ import './App.css';
 import ItemListContainer from './Components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './Components/ItemDetailContainer/ItemDetailContainer';
 import NavBar from './Components/NavBar/NavBar';
+import Cart from './Components/Cart/Cart'
 
 function App() {
 
@@ -14,9 +15,12 @@ function App() {
 
         <Routes>
           <Route path='/' element={<ItemListContainer />} />
-          <Route path='/detalle' element={<ItemDetailContainer />} />
-          <Route path='/:categoryId' element={<ItemListContainer />} />
-          <Route path='/:categoryId' element={<ItemListContainer />} />
+          <Route path='/:detailId' element={<ItemDetailContainer />} />
+          <Route path='/jrpg/:categoryId' element={<ItemListContainer />} />
+          <Route path='/arpg/:categoryId' element={<ItemListContainer />} />
+          <Route path='/cart' element={<Cart />} />
+
+
 
         </Routes>
         

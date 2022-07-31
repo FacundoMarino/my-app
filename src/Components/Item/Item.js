@@ -1,21 +1,20 @@
 import "./Item.css"
-import ItemCount from "../ItemCount/ItemCount"
+import { Link } from "react-router-dom"
 
 const Item = ({ data }) => {
 
-    
-const onAdd = (totalCart) => {
-    console.log(totalCart)
-}
 
     return (
     
-            <div className="container-portada">
+        <div className="container-portada">
+            <Link to={`${data.id}`}>
                 <img className="portada-img" src={data.img} alt={data.title} />
+            </Link>
+
                 <p>{data.title}</p>
                 <p>{data.detail}</p>
-                <ItemCount stock={5} initial={1} onAdd={onAdd} />
-            </div>
+
+        </div>
 
                 
     )

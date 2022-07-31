@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom"
 
-export const products = [
+ const products = [
     {   
         id: 1,
         category: "jrpg",
@@ -60,9 +60,10 @@ useEffect (() => {
     const promesa = new Promise(resolve => {
         setTimeout(() => {
             resolve(products)
-        }, 1000);
+        }, 2000);
     })
-        categoryId ? promesa.then(res => setData(res.filter(game => game.category === categoryId))) : promesa.then(res => setData(res))
+        
+    categoryId ? promesa.then(res => setData(res.filter(game => game.category === categoryId))) : promesa.then(res => setData(res))
 
 }, [categoryId])
  
