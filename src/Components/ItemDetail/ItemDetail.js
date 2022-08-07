@@ -15,6 +15,7 @@ const ItemDetail = ({ data }) => {
         addProduct(data, quantity)
     }    
 
+
     return (
 
             <div className="container-itemdetail">

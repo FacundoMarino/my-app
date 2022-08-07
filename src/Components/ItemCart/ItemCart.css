@@ -1,0 +1,11 @@
+.portada-img{
+    width: 20rem;
+    height: 15rem;
+    gap: 10px;
+    padding: 2rem;
+}
+
+.card{
+    margin: 2em;
+    padding: 2em;
+}
