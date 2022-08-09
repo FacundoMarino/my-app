@@ -11,10 +11,10 @@ function NavBar(){
                 <NavLink className="nav-link active" aria-current="page" to='/'>Productos</NavLink>
             </li>     
             <li className="nav-item">
-                <NavLink className="nav-link" to='/jrpg/jrpg'>JRPG</NavLink>
+                <NavLink className="nav-link" to='/category/jrpg'>JRPG</NavLink>
             </li>
             <li className="nav-item">
-                <NavLink className="nav-link" to='/arpg/arpg'>ARPG</NavLink>
+                <NavLink className="nav-link" to='/category/arpg'>ARPG</NavLink>
             </li>
             
                 <NavLink className="nav-link" to='/cart'>
